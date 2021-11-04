@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href = "style.css">
+    <script src = 'javascript.js' defer></script>
+</head>
+<body>
+    
+    <div class = 'container'>
+        <div class = 'header'>Library</div>
+        
+        <div class = 'content'>
+  
+                <div class = 'add'>+</div>
+ 
+        </div>
+        
+    </div>
+
+
+    <!-- Modal Section -->
+    <div class="bg-modal" id='bg-modal'>
+        
+        <form class='form inputCard' id='form' onsubmit='return false'>
+            <div class="close">+</div>
+            <div class = header2>Add Book
+                
+            </div>
+            <div class='form-control'>
+                <label class='titleLabel'>Title</label>
+                <input type='text' placeholder="Example: The Hobbit" id='title'>
+                <small class='title'>Please provide missing input</small>
+            </div>
+
+            <div class='form-control'>
+                <label class='authorLabel'>Author</label>
+                <input type='text' placeholder="Example: J.R.R. Tolkien" id='author'>
+                <small class='author'>Please provide missing input</small>
+            </div>
+
+            <div class='form-control'>
+                <label class='pageNumLabel'>Total No. of Pages</label>
+                <input type='text' placeholder="Example: 123" id='pageNum'>
+                <small class= 'pageNumError'>Error message</small>
+            </div>
+
+            <div class='switch'>
+                <label class='switch' id='switch'>Completed</label>
+                <p></p>
+                <input type='checkbox' class = 'checkbox' id='bookCheckBox'>
+                
+                <span class= 'slider round'>
+            </div>
+
+            <button>Submit</button>
+        </form>
+
+        <form class='editCard' onsubmit='return false'>
+            <div class="close">+</div>
+            <div class = header2>Edit Book
+                
+            </div>
+            
+
+            <button>Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
